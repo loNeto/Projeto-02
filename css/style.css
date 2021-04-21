@@ -1,0 +1,232 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Nunito', sans-serif;
+}
+html,body{
+    height:100%;
+    background-color:#ffffff;
+}
+::selection{
+    background-color:#2e2e2e;
+    color:#e2e2e2;
+}
+
+section.natoFotos{
+    width:100%;
+    height:auto;
+}
+
+main.principal{
+    padding:0 2%;
+}
+
+div.texto-header{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(190deg,#ffffff,#e9e9e9);
+    background-image:-webkit-linear-gradient(190deg,#ffffff,#e9e9e9);
+    background-image:-moz-linear-gradient(190deg,#ffffff,#e9e9e9);
+    background-image:-o-linear-gradient(190deg,#ffffff,#e9e9e9);
+    border-top:10px solid #464646;
+    border-bottom:10px solid #464646;
+    margin:0 auto;
+}
+#digitando{
+    padding:12px;
+    color:#464646;
+    font-size:50px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+section.sessao1{
+    max-width:1280px;
+    margin:50px auto;
+    display:flex;
+    overflow-x:hidden;
+    flex-direction:row-reverse;
+}
+figure.img-sessao1 img{
+    width:100%;
+    max-width:520px;
+    border-radius:24px;
+}
+section.sessao1 p{
+    max-width:550px;
+    padding:0 2%;
+    text-align:right;
+    font-weight:bold;
+    letter-spacing:1px;
+    color:#2b2b2b;
+    font-size:22px;
+    margin:0 auto;
+}
+
+section.sessao2{
+    width:100%;
+    max-width:1280px;
+    margin:50px auto;
+}
+figure.img-sessao2 img{
+    width:100%;
+    border-radius:24px;
+}
+figure.img-sessao2{
+    position:relative;
+}
+section.sessao2 p{
+    width:100%;
+    position:absolute;
+    left:0;
+    right:0;
+    top:50%;
+    display:inline-block;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    -o-transform:translateY(-50%);
+    margin:0 auto;
+    color:#ebebeb;
+    padding:0 2%;
+    text-align:center;
+    letter-spacing:1px;
+    font-size:20px;
+    font-weight:lighter;
+    background-color:rgba(0, 0, 0,0.6);
+}
+
+div.pulaLinha{
+    width:50%;
+    height:50px;
+    margin:0 auto;
+    border-radius:50px;
+    position:relative;
+    top:-10px;
+}
+div.figureLaco{
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+    width:100%;
+    max-width:200px;
+    height:60px;
+    background-image:url('../images/decoracao/laco.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+}
+
+section.sessao3{
+    max-width:1280px;
+    margin:50px auto;
+    overflow-x:hidden;
+}
+figure.img-sessao3 img{
+    max-width:100%;
+    width:620px;
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:24px;
+}
+section.sessao3 p{
+    width:100%;
+    max-width:720px;
+    padding:40px 0 40px 0;
+    margin:auto;
+    color:#2b2b2b;
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
+}
+
+div.pulaLinha2{
+    width:50%;
+    height:62px;
+    margin:0 auto;
+    border-radius:50px;
+    position:relative;
+}
+
+section.sessao4{
+    width:100%;
+    max-width:1280px;
+    height:auto;
+    margin:50px auto;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-top:8px dashed #464646;
+    border-bottom:8px dashed #464646;
+    padding:40px 0 40px 0;
+}
+figure.img-sessao4 img{
+    width:100%;
+    max-width:800px;
+    border-radius:24px;
+}
+section.sessao4 ul{
+    list-style-type:none;
+    padding:0 2%;
+}
+section.sessao4 ul li{
+    color:#2b2b2b;
+    font-size:30px;
+    padding:10px;
+    font-weight:bold;
+    text-align:center;
+}
+
+footer.pe{
+    width:100%;
+    background-color:#292929;
+    border-top:4px solid #7a7a7a;
+}
+footer.pe p{
+    color:white;
+    font-size:17px;
+    font-weight:lighter;
+    font-style:italic;
+    padding:17px;
+    text-align:center;
+}
+
+@media screen and (max-width: 800px){
+    section.sessao1{
+        flex-direction: column;
+    }
+    figure.img-sessao1{
+        margin:0 auto;
+    }
+    section.sessao1 p{
+        margin:0 auto;
+        text-align:center;
+        margin:20px auto;
+    }
+
+    section.sessao4{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-height: 290px){
+    #digitando{
+        height:auto;
+    }
+}
+
+@media screen and (max-height: 460px){
+    section.sessao4{
+        height:auto;
+    }
+}
